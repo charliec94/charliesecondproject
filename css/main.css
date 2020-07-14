@@ -395,8 +395,16 @@ header {
 }
 
 .heading-quaternary {
-  font-size: 3.75rem;
+  font-size: 2rem;
   color: #1F305A;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-quaternary {
+    font-size: 3.75rem;
+    margin-top: 0;
+  }
 }
 
 .btn-together, .btn-together:link, .btn-together:visited {
@@ -498,7 +506,13 @@ header {
     font-size: 130px;
     position: absolute;
     top: 0px;
-    left: 350px;
+    right: 30%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .heading-tertiary-left {
+    right: 38%;
   }
 }
 
