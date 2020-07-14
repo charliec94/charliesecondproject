@@ -1,0 +1,60 @@
+$font-primary: 'Roboto',
+sans-serif;
+$font-display: 'Josefin Sans',
+sans-serif;
+
+$color-primary: #1F305A;
+$color-primary-light: #628FC9;
+
+$color-green: #58A871;
+
+$color-grey: #E3E3E3;
+
+$color-grey-dark: #A7A7A7;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+$default-font-size: 1.6rem;
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    // background: #000 !important;
+    // color: #0f0 !important;
+    // outline: solid #f00 1px !important;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5% //1 rem = 1 px
+    
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;       
+
+}
+
+.btn-primary {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+
+}

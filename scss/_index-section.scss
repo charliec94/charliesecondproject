@@ -1,0 +1,215 @@
+.together__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 3rem;
+
+
+
+    // border: 1px solid red;
+    @media screen and (min-width: $bp-small) {
+        padding: 3rem;
+        margin-bottom: 10px;
+
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 3rem 3rem 0;
+        margin-bottom: 200px;
+
+    }
+
+    &-img {
+
+        @media screen and (min-width: $bp-large) {
+            max-width: 50vw;
+            margin-top: 3rem;
+            margin-right: 8rem;
+            position: relative;
+            z-index: -1;
+
+        }
+
+        &-1 {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &-box {
+        width: 100%;
+        margin-top: 4.15rem;
+
+        @media screen and (min-width: $bp-large) {
+            width: auto;
+        }
+    }
+
+    &-text {
+
+        // border: 1px solid red;
+        @media screen and (min-width: $bp-large) {
+            max-width: 400px; //give it px instead of %
+        }
+
+    }
+
+    &-paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    &-btn {
+        margin: 15px 0;
+    }
+
+}
+
+.heading-tertiary {
+    font-size: 50px;
+    line-height: 0.8;
+    margin: 0;
+    color: $color-grey;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: -1;
+
+    @media screen and (min-width: $bp-large) {
+        font-size: 130px;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    // @media screen and (min-width: $bp-small) {
+    //     font-size: 80px;
+    //     margin-bottom: 3rem;
+    // }
+
+
+}
+
+.heading-quaternary {
+    font-size: 3.75rem;
+    color: $color-primary;
+
+}
+
+.btn-together {
+
+    &,
+    &:link,
+    &:visited {
+        color: black;
+        padding: 13px 25px;
+        text-align: center;
+        border: 1px solid green;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}
+
+//--------------------------------------------------SOLUTIONS ----------------------------------------------------------//
+// ---------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------
+
+
+
+.solutions__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-bottom: 200px;
+    padding: 3rem;
+
+    @media screen and (min-width: $bp-medium) {
+        flex-wrap: wrap;
+        padding: 0 3rem 3rem 0;
+        margin-bottom: 200px;
+
+    }
+
+    @media screen and (min-width: $bp-large) {
+        padding: 0;
+
+    }
+
+
+    // border: 1px solid red;
+
+
+    &-img {
+
+        @media screen and (min-width: $bp-large) {
+            max-width: 50vw;
+            margin-top: 3rem;
+            position: relative;
+            z-index: -1;
+            margin-left: 8rem;
+
+        }
+
+        &-1 {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &-box {
+        width: 100%;
+        margin-top: 4.15rem;
+
+        @media screen and (min-width: $bp-large) {
+            width: auto;
+        }
+    }
+
+    &-text {
+
+        // border: 1px solid red;
+        @media screen and (min-width: $bp-large) {
+            max-width: 400px; //give it px instead of %
+        }
+
+    }
+
+    &-paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    &-btn {
+        margin: 15px 0;
+    }
+
+}
+
+.heading-tertiary-left {
+    font-size: 50px;
+    line-height: 0.8;
+    margin: 0;
+    color: $color-grey;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: -1;
+
+    @media screen and (min-width: $bp-large) {
+        font-size: 130px;
+        position: absolute;
+        top: 0px;
+        left: 350px;
+
+    }
+}
