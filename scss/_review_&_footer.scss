@@ -1,10 +1,10 @@
-.review{
+.review {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: center; //center horizontally
     align-items: center; //center vertically   
-    
+
     position: relative;
     background-image: url(../img/index-3.jpg);
     background-size: cover;
@@ -12,44 +12,117 @@
     z-index: 0;
 
 
-    &__client-box{
+    &__client-box {
         background-color: #fff;
         // padding: 3rem;           
         z-index: 1;
-        max-width: 500px;
-        padding: 1rem 3rem;        
+        max-width: 400px;
+        padding: 1rem 3rem;
         margin: 5rem 0;
         line-height: 1.6;
 
-        @media screen and (min-width: $bp-medium){
+        @media screen and (min-width: $bp-small) {
+            max-width: 500px;
+        }
+
+        @media screen and (min-width: $bp-medium) {
             background-color: #fff;
-            padding: 3rem;           
+            padding: 3rem;
             z-index: 1;
-            max-width: 600px; 
+            max-width: 600px;
             margin: 10rem 0;
             line-height: 1.6;
         }
-        
-        &-title{
+
+        &-title {
             text-transform: uppercase;
             padding-bottom: 3rem;
         }
     }
-    &__company-logo{
+
+    &__company-logo {
         display: grid;
         grid-template-columns: repeat(2, 150px);
         // padding-left: 5rem;
         justify-items: center;
 
-        @media screen and (min-width: $bp-medium){
+        @media screen and (min-width: $bp-medium) {
             padding-left: 5rem;
             grid-template-columns: repeat(2, 300px);
         }
+    }
+}
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;    
+    background-color: $color-primary-light;   
+    padding: 2rem 0 1rem 2rem;    
+    
+    
+
+    @media screen and (min-width: $bp-smallest) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    @media screen and (min-width: $bp-large) {
+        justify-content: space-around;
         
-        
-        
-        
+    }
+
+    &__title{
+        color: $color-primary;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;        
+        text-transform: uppercase;
+        margin: 10px 0;
 
     }
 
+        @media screen and (min-width: $bp-medium) {
+            font-size: 20px;  
+            
+        }
+
+
+    &__section{}
+
+    &__section-2{}
+
+    &__section-3{}
+
+    &__section-4{}
+
+    &__company-logo {        
+        display: flex;
+        background-color: $color-primary-light;
+        justify-content: center;
+    }
+}
+
+.btn-footer{
+    padding: 3px !important;
+    font-size: 10px !important; 
+    background-color: #fff;
+}
+
+a,
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+li{
+    display: block;
 }

@@ -305,7 +305,6 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  padding: 3rem;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -322,6 +321,12 @@ header {
     position: relative;
     padding: 0 3rem 3rem 3rem;
     margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .together__container {
+    padding: 0;
   }
 }
 
@@ -523,10 +528,16 @@ header {
 .review__client-box {
   background-color: #fff;
   z-index: 1;
-  max-width: 500px;
+  max-width: 400px;
   padding: 1rem 3rem;
   margin: 5rem 0;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 37.5em) {
+  .review__client-box {
+    max-width: 500px;
+  }
 }
 
 @media screen and (min-width: 56.25em) {
@@ -559,5 +570,90 @@ header {
     -ms-grid-columns: (300px)[2];
         grid-template-columns: repeat(2, 300px);
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #628FC9;
+  padding: 2rem 0 1rem 2rem;
+}
+
+@media screen and (min-width: 31.25em) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__title {
+  color: #1F305A;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 56.25em) {
+  .footer {
+    font-size: 20px;
+  }
+}
+
+.footer__company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #628FC9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-footer {
+  padding: 3px !important;
+  font-size: 10px !important;
+  background-color: #fff;
+}
+
+a,
+a:visited,
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
