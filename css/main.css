@@ -305,11 +305,11 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+  padding: 3rem;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 21.87em) {
   .together__container {
-    padding: 3rem;
     margin-bottom: 10px;
   }
 }
@@ -406,7 +406,7 @@ header {
   border: 1px solid green;
   text-decoration: none;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -421,7 +421,7 @@ header {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   padding: 3rem;
 }
 
@@ -525,10 +525,22 @@ header {
   z-index: 0;
 }
 
+@media screen and (min-width: 21.87em) {
+  .review {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  .review {
+    margin: 0;
+  }
+}
+
 .review__client-box {
   background-color: #fff;
   z-index: 1;
-  max-width: 400px;
+  max-width: 300px;
   padding: 1rem 3rem;
   margin: 5rem 0;
   line-height: 1.6;
@@ -582,7 +594,7 @@ header {
   padding: 2rem 0 1rem 2rem;
 }
 
-@media screen and (min-width: 31.25em) {
+@media screen and (min-width: 21.87em) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

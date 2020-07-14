@@ -2,13 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    
-
-
+    padding: 3rem;
 
     // border: 1px solid red;
-    @media screen and (min-width: $bp-small) {
-        padding: 3rem;
+    @media screen and (min-width: $bp-smallest) {        
         margin-bottom: 10px;
 
     }
@@ -116,8 +113,14 @@
         border: 1px solid green;
         text-decoration: none;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1rem;
         text-transform: uppercase;
+
+        // @media screen and (min-width: $bp-small) {
+        //     //     font-size: 80px;
+        //     //     margin-bottom: 3rem;
+        //     // }
+       
     }
 }
 
@@ -133,7 +136,7 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     padding: 3rem;
 
     @media screen and (min-width: $bp-medium) {
