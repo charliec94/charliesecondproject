@@ -60,3 +60,30 @@ body {
     position: relative;
 
 }
+
+
+
+.btn-together {
+
+    &,
+    &:link,
+    &:visited {
+        color: black;
+        padding: 13px 25px;
+        text-align: center;
+        border: 1px solid green;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $bp-medium) {
+                font-size: 15px;
+                margin-bottom: 3rem;
+            }
+            @media screen and (min-width: $bp-large) {
+                font-size: 20px;
+                margin-bottom: 3rem;
+            }
+    }
+}

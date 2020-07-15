@@ -29,6 +29,31 @@ body {
   position: relative;
 }
 
+.btn-together, .btn-together:link, .btn-together:visited {
+  color: black;
+  padding: 13px 25px;
+  text-align: center;
+  border: 1px solid green;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 56.25em) {
+  .btn-together, .btn-together:link, .btn-together:visited {
+    font-size: 15px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .btn-together, .btn-together:link, .btn-together:visited {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+}
+
 .header {
   height: 95vh;
   min-width: 100%;
@@ -51,12 +76,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 50px;
+  top: 40%;
+}
+
+@media screen and (min-width: 56.25em) {
+  .header__container {
+    top: auto;
+  }
 }
 
 .header__container-secondary {
@@ -137,23 +169,6 @@ body {
   }
 }
 
-.phrase {
-  padding: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #628FC9;
-}
-
-@media screen and (min-width: 68.75em) {
-  .phrase {
-    padding: 13rem;
-  }
-}
-
 .heading-secondary {
   font-weight: 300;
   line-height: 1.3;
@@ -167,6 +182,143 @@ body {
     line-height: 1.3;
     font-size: 3.25rem;
     text-align: center;
+  }
+}
+
+.heading-tertiary {
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 0;
+  color: #E3E3E3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  z-index: -1;
+}
+
+@media screen and (min-width: 68.75em) {
+  .heading-tertiary {
+    font-size: 130px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.heading-quaternary {
+  font-size: 2rem;
+  color: #1F305A;
+  margin-top: 1rem;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-quaternary {
+    font-size: 3.75rem;
+    margin-top: 0;
+  }
+}
+
+.heading-tertiary-left {
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 0;
+  color: #E3E3E3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  z-index: -1;
+}
+
+@media screen and (min-width: 68.75em) {
+  .heading-tertiary-left {
+    font-size: 130px;
+    position: absolute;
+    top: 0px;
+    right: 30%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .heading-tertiary-left {
+    right: 38%;
+  }
+}
+
+.heading-quaternary-left {
+  font-size: 2rem;
+  color: #1F305A;
+  margin-top: 1rem;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-quaternary-left {
+    font-size: 3.75rem;
+  }
+}
+
+.header__page {
+  height: 55vh;
+  min-width: 100%;
+  background-image: url(../img/main.jpg);
+  background-size: cover;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__page-title {
+  margin-top: 10rem;
+  width: 1200px;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  padding-left: 3rem;
+  position: relative;
+}
+
+.header__page-title:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #628FC9;
+  width: 7rem;
+  height: 8px;
+  margin-left: 15px;
+  top: 50%;
+}
+
+@media screen and (max-width: 899px) {
+  .header__page-title {
+    margin-top: 30rem;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .header__page-title:after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .header__page-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 21.87em) {
+  .header__page-title {
+    padding-left: 0;
+    font-size: 1.8rem;
   }
 }
 
@@ -300,6 +452,23 @@ header {
   color: #58A871;
 }
 
+.phrase {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #628FC9;
+}
+
+@media screen and (min-width: 68.75em) {
+  .phrase {
+    padding: 13rem;
+  }
+}
+
 .together__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,67 +544,6 @@ header {
   margin: 15px 0;
 }
 
-.heading-tertiary {
-  font-size: 50px;
-  line-height: 0.8;
-  margin: 0;
-  color: #E3E3E3;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  z-index: -1;
-}
-
-@media screen and (min-width: 68.75em) {
-  .heading-tertiary {
-    font-size: 130px;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-}
-
-.heading-quaternary {
-  font-size: 2rem;
-  color: #1F305A;
-  margin-top: 1rem;
-  line-height: 1.3;
-}
-
-@media screen and (min-width: 56.25em) {
-  .heading-quaternary {
-    font-size: 3.75rem;
-    margin-top: 0;
-  }
-}
-
-.btn-together, .btn-together:link, .btn-together:visited {
-  color: black;
-  padding: 13px 25px;
-  text-align: center;
-  border: 1px solid green;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 56.25em) {
-  .btn-together, .btn-together:link, .btn-together:visited {
-    font-size: 15px;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 68.75em) {
-  .btn-together, .btn-together:link, .btn-together:visited {
-    font-size: 20px;
-    margin-bottom: 3rem;
-  }
-}
-
 .solutions__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,45 +608,6 @@ header {
 
 .solutions__container-btn {
   margin: 15px 0;
-}
-
-.heading-tertiary-left {
-  font-size: 50px;
-  line-height: 0.8;
-  margin: 0;
-  color: #E3E3E3;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  z-index: -1;
-}
-
-@media screen and (min-width: 68.75em) {
-  .heading-tertiary-left {
-    font-size: 130px;
-    position: absolute;
-    top: 0px;
-    right: 30%;
-  }
-}
-
-@media screen and (min-width: 75em) {
-  .heading-tertiary-left {
-    right: 38%;
-  }
-}
-
-.heading-quaternary-left {
-  font-size: 2rem;
-  color: #1F305A;
-  margin-top: 1rem;
-  line-height: 1.3;
-}
-
-@media screen and (min-width: 56.25em) {
-  .heading-quaternary-left {
-    font-size: 3.75rem;
-  }
 }
 
 .review {
