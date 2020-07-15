@@ -56,6 +56,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 50px;
 }
 
 .header__container-secondary {
@@ -251,13 +252,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width: 56.25em) {
@@ -599,45 +601,26 @@ header {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: #628FC9;
   padding: 2rem 0 1rem 2rem;
-}
-
-@media screen and (min-width: 21.87em) {
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 56.25em) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 3rem;
-  }
-}
-
-@media screen and (min-width: 68.75em) {
-  .footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 3rem;
+    text-align: start;
   }
 }
 
@@ -653,6 +636,19 @@ header {
 @media screen and (min-width: 56.25em) {
   .footer {
     font-size: 20px;
+  }
+  .footer__section-1 > ul {
+    max-width: 300px;
+  }
+  .footer__section-1 > ul > li {
+    display: inline-block;
+    width: 30%;
+  }
+  .footer__content-blog {
+    padding-left: 20px;
+  }
+  .footer__content-contact {
+    padding-left: 20px;
   }
 }
 

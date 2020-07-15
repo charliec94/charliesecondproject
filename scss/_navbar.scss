@@ -32,7 +32,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    min-width: 100%;
+    min-width: 100%;    
 
     @media screen and (min-width: $bp-medium) {
         flex-direction: row;                
@@ -52,10 +52,10 @@ header {
 .nav__links {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: center;
-
-
+    flex-direction: column;
+    text-align: center;    
 
     @media screen and (min-width: $bp-medium) {
         display: flex;
