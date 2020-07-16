@@ -432,7 +432,7 @@ header {
 
 .nav__links > li {
   display: inline-block;
-  margin: 8px;
+  margin: 2px;
 }
 
 @media screen and (min-width: 56.25em) {
@@ -440,6 +440,7 @@ header {
     padding: 0;
     padding: 0 20px;
     margin-left: 50px;
+    margin: 8px;
   }
 }
 
@@ -450,6 +451,25 @@ header {
 
 .nav__links > li > a:hover {
   color: #58A871;
+}
+
+.menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: 3px solid #fff;
 }
 
 .phrase {
