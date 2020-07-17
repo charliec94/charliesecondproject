@@ -191,7 +191,7 @@
 
 
 .header__page {
-    height: 55vh;
+    height: 45vh;
     min-width: 100%;
     background-image: url(../img/main.jpg);
     background-size: cover;
@@ -200,47 +200,52 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width: $bp-medium) {
+        height: 55vh;
+    }
+
 
     &-title {
-        margin-top: 10rem;
+        display: none;
         width: 1200px;
         font-weight: 300;
-        font-size: 4rem;
         letter-spacing: 3px;
-        padding-left: 3rem;
         position: relative;
+        font-size: 1.8rem;
 
         &:after{
             position: absolute;
-            content: "";
+            content: none;
             height: 2px;
             background-color: $color-primary-light;
             width: 7rem;
             height: 8px;
-            margin-left: 15px;
+            padding-left: 3rem;
             top: 50%;
         }
 
-        @media screen and (max-width: 899px) {
-            margin-top: 30rem;
-            font-size: 2.8rem;
-            text-align: center;
-
-            &:after {
-                content: none;
-            }
-        }
-
-        @media screen and (max-width: $bp-small) {
-
+        @media screen and (min-width: $bp-small) {
+            margin-top: 50px;
             font-size: 2.3rem;
         }
-
-        @media screen and (max-width: $bp-smallest) {
-            padding-left: 0;
-            font-size: 1.8rem;
-
+        @media screen and (min-width: $bp-medium) {
+            margin: 10rem 0 0 10rem;
+            font-size: 2.5rem;
+            display: inline;
+            &:after{
+                content: "";
+            }
         }
+        @media screen and (min-width: $bp-largest) {
+            font-size: 3rem;           
+               
+        }
+
+        
+
+        
+
+       
 
 
 

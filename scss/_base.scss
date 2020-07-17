@@ -87,3 +87,40 @@ body {
             }
     }
 }
+
+
+h3 {
+    font-size: 50px;
+    line-height: 0.8;
+    margin: 0;
+    color: $color-grey;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: -1;
+}
+
+h4 {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    @media screen  and (min-width: $bp-small) {
+        font-size: 2.1rem;
+   }
+
+   @media screen  and (min-width: $bp-medium) {
+    font-size: 3rem;
+
+}
+    @media screen  and (min-width: $bp-large) {
+        font-size: 5rem;
+
+   }
+    
+
+    
+   
+}

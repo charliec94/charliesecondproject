@@ -1,0 +1,203 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    max-width: 70vw;
+    margin: 2rem auto;
+
+    @media screen and (min-width: $bp-small) {
+        margin: 4.5rem auto;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        margin: 3rem auto;
+
+    }
+
+    @media screen and (min-width: $bp-large) {
+        margin: 7rem auto;
+        min-height: 290px;
+    }
+
+    &__heading {
+        display: flex;
+        font-size: 25px;
+        margin-bottom: 5px;
+
+        @media screen and (min-width: $bp-medium) {
+            justify-content: flex-end;
+            font-size: 50px;
+            letter-spacing: 4px;
+            margin-bottom: 0
+        }
+
+        @media screen and (min-width: $bp-large) {
+            font-size: 100px;
+            letter-spacing: 4px;
+        }
+
+        @media screen and (min-width: $bp-largest) {
+            font-size: 140px;
+            letter-spacing: 10px;
+        }
+
+    }
+
+    &__text {
+        position: relative;
+        color: rgb(78, 78, 78);
+        font-weight: 400;
+
+        font-size: 13px;
+        margin-top: 20px;
+
+        @media screen and (min-width: $bp-small) {
+            margin: 20px auto 60px auto;
+        }
+
+
+        @media screen and (min-width: $bp-large) {
+            position: absolute;
+            top: 53px;
+            font-size: 20px;
+            max-width: 70%;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: $bp-largest) {
+            max-width: 60%;
+            top: 65px;
+        }
+
+    }
+
+    &__img {
+        position: relative;
+        margin: auto;
+        padding:2rem;
+        max-width: 1100px;
+        margin-bottom: 100px;
+
+            @media screen and (min-width: $bp-largest) {
+                padding: 3rem 0 0 0;
+            }
+
+        .square-1 {
+            background-color: $color-primary;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+            width: 170px;
+            height: 100px;
+            padding: 3rem .5rem 0 2rem;
+
+            @media screen and (min-width: $bp-small) {
+                margin-left: 80px;
+                width: 180px;
+                height: 100px;
+                // padding: 6rem 2rem 0 4rem;
+                padding: 8px
+
+            }
+
+
+            @media screen and (min-width: $bp-medium) {
+                margin-left: 80px;
+                width: 300px;
+                height: 400px;
+                padding: 6rem 2rem 0 4rem;
+
+            }
+
+
+            @media screen and (min-width: $bp-large) {
+                margin-left: 0;
+                width: 400px;
+                height: 600px;
+                padding: 6rem 2rem 0 4rem;
+                
+            }
+        }
+
+        &-square-2 {
+            position: absolute;
+            z-index: -1;
+            bottom: -80px;
+            margin-right: 5px;
+
+
+            @media screen and (min-width: $bp-small) {
+                position: absolute;
+                z-index: -1;
+                width: 75%;
+                bottom: -80px;
+                right: 50px;
+            }
+
+
+            @media screen and (min-width: $bp-medium) {
+                position: absolute;
+                z-index: -1;
+                width: 75%;
+                bottom: -100px;
+                right: 100px;
+                
+
+            }
+
+            @media screen and (min-width: $bp-large) {
+                padding: 3rem;
+                position: absolute;
+                z-index: -1;
+                width: 75%;
+                bottom: -100px;
+                right: 0;
+            }
+        }
+
+
+
+        //------------------------------------- LINE FEATURE ----------------------------------------//
+        &-line{
+            display: none;
+            position: absolute;
+            top: 60%;
+            left: 6rem;
+            width: 15px;
+            height: 100px;
+            background: $color-primary-light;
+            margin-left: 85px;
+
+            @media screen and (min-width: $bp-medium) {
+                display: inline;
+            }
+            @media screen and (min-width: $bp-large) {
+                margin-left: 0;
+            }
+        
+            &:before{
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 100px;
+                margin-left: 100px;
+                background: $color-primary-light;
+                }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 100px;
+                margin-left: 50px;
+                background: $color-primary-light;
+                }
+
+        }   
+    }
+}
+
+.women-img {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
