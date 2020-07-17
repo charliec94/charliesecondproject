@@ -973,7 +973,7 @@ li {
   position: absolute;
   z-index: -1;
   bottom: -80px;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 37.5em) {
