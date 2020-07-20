@@ -1007,6 +1007,12 @@ li {
   }
 }
 
+.about__img .women-img {
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .about__img-line {
   display: none;
   position: absolute;
@@ -1048,9 +1054,111 @@ li {
   background: #628FC9;
 }
 
-.women-img {
-  width: 100%;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+.process {
+  min-height: 100vh;
+  background-color: #628FC9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12rem;
+}
+
+@media screen and (min-width: 68.75em) {
+  .process {
+    background-image: url(../img/about__process.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 20rem;
+  }
+}
+
+.process__heading {
+  color: #fff;
+  text-shadow: #A7A7A7 1px 0 10px;
+  z-index: 1;
+  font-size: 2.5rem;
+  margin: 2rem 0 0rem 3rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .process__heading {
+    font-size: 12rem;
+    margin: 4rem 0 0rem 6rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .process__heading {
+    font-size: 15rem;
+    margin: 12rem 0 0rem 12rem;
+  }
+}
+
+.process__box-1-of-2 {
+  max-width: 70rem;
+  font-size: 13px;
+  margin: 1rem 2rem 1rem 3rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .process__box-1-of-2 {
+    margin: 3rem 0 2rem 10rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .process__box-1-of-2 {
+    margin: 7rem 0 5rem 17rem;
+    font-size: 1.8rem;
+  }
+}
+
+.process__box-2-of-2 {
+  max-width: 70rem;
+  font-size: 13px;
+  margin: 0rem 2rem 1rem 3rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .process__box-2-of-2 {
+    margin: 2rem 0 2rem 10rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .process__box-2-of-2 {
+    margin: 0rem 0 5rem 17rem;
+    font-size: 1.8rem;
+  }
+}
+
+.process__box-title {
+  text-transform: initial;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.process__text-box {
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .process__text-box {
+    padding-top: 1rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .process__text-box {
+    padding-top: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
