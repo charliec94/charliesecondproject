@@ -91,6 +91,136 @@ h4 {
   }
 }
 
+.heading-secondary {
+  font-weight: 300;
+  line-height: 1.3;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-secondary {
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 3.25rem;
+    text-align: center;
+  }
+}
+
+.heading-tertiary {
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 0;
+  color: #E3E3E3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  z-index: -1;
+}
+
+@media screen and (min-width: 68.75em) {
+  .heading-tertiary {
+    font-size: 130px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.heading-quaternary {
+  font-size: 2rem;
+  color: #1F305A;
+  margin-top: 1rem;
+  line-height: 1.3;
+}
+
+.heading-quaternary-line {
+  font-size: 2rem;
+  color: #1F305A;
+  margin-top: 15px;
+  line-height: 1.3;
+}
+
+.heading-quaternary-line:after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 7px;
+  margin-left: 1.3rem;
+  margin-top: 0.8rem;
+  background: #628FC9;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-quaternary-line {
+    font-size: 3.5rem;
+    font-size: 3.75rem;
+    margin-top: 0;
+  }
+  .heading-quaternary-line:after {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 7px;
+    margin-left: 1.3rem;
+    margin-top: 1.6rem;
+    background: #628FC9;
+  }
+}
+
+.heading-tertiary-left {
+  font-size: 50px;
+  line-height: 0.8;
+  margin: 0;
+  color: #E3E3E3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  z-index: -1;
+}
+
+@media screen and (min-width: 68.75em) {
+  .heading-tertiary-left {
+    font-size: 130px;
+    position: absolute;
+    top: 0px;
+    right: 30%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .heading-tertiary-left {
+    right: 38%;
+  }
+}
+
+.heading-quaternary-left {
+  font-size: 2rem;
+  color: #1F305A;
+  margin-top: 2rem;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 56.25em) {
+  .heading-quaternary-left {
+    font-size: 3.45rem;
+  }
+}
+
+.smallest-white-letter {
+  color: white;
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .smallest-white-letter {
+    color: #1F305A;
+    margin: 3rem 0rem 0rem 3rem;
+  }
+}
+
 .header {
   height: 95vh;
   min-width: 100%;
@@ -203,97 +333,6 @@ h4 {
         align-self: center;
     -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
             box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
-  }
-}
-
-.heading-secondary {
-  font-weight: 300;
-  line-height: 1.3;
-  font-size: 2.6rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 56.25em) {
-  .heading-secondary {
-    font-weight: 300;
-    line-height: 1.3;
-    font-size: 3.25rem;
-    text-align: center;
-  }
-}
-
-.heading-tertiary {
-  font-size: 50px;
-  line-height: 0.8;
-  margin: 0;
-  color: #E3E3E3;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  z-index: -1;
-}
-
-@media screen and (min-width: 68.75em) {
-  .heading-tertiary {
-    font-size: 130px;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-}
-
-.heading-quaternary {
-  font-size: 2rem;
-  color: #1F305A;
-  margin-top: 1rem;
-  line-height: 1.3;
-}
-
-@media screen and (min-width: 56.25em) {
-  .heading-quaternary {
-    font-size: 3.75rem;
-    margin-top: 0;
-  }
-}
-
-.heading-tertiary-left {
-  font-size: 50px;
-  line-height: 0.8;
-  margin: 0;
-  color: #E3E3E3;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  z-index: -1;
-}
-
-@media screen and (min-width: 68.75em) {
-  .heading-tertiary-left {
-    font-size: 130px;
-    position: absolute;
-    top: 0px;
-    right: 30%;
-  }
-}
-
-@media screen and (min-width: 75em) {
-  .heading-tertiary-left {
-    right: 38%;
-  }
-}
-
-.heading-quaternary-left {
-  font-size: 2rem;
-  color: #1F305A;
-  margin-top: 1rem;
-  line-height: 1.3;
-}
-
-@media screen and (min-width: 56.25em) {
-  .heading-quaternary-left {
-    font-size: 3.75rem;
   }
 }
 
@@ -832,13 +871,7 @@ li {
       flex-wrap: nowrap;
   position: relative;
   max-width: 70vw;
-  margin: 2rem auto;
-}
-
-@media screen and (min-width: 37.5em) {
-  .about {
-    margin: 4.5rem auto;
-  }
+  margin: 3rem;
 }
 
 @media screen and (min-width: 56.25em) {
@@ -892,7 +925,7 @@ li {
   color: #4e4e4e;
   font-weight: 400;
   font-size: 13px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -922,7 +955,7 @@ li {
 .about__img {
   position: relative;
   margin: auto;
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem 2rem;
   max-width: 1100px;
   margin-bottom: 100px;
 }
@@ -944,7 +977,7 @@ li {
 
 @media screen and (min-width: 37.5em) {
   .about__img .square-1 {
-    margin-left: 80px;
+    margin-left: 40px;
     width: 180px;
     height: 100px;
     padding: 8px;
@@ -982,7 +1015,7 @@ li {
     z-index: -1;
     width: 75%;
     bottom: -80px;
-    right: 50px;
+    right: 80px;
   }
 }
 
@@ -1055,7 +1088,6 @@ li {
 }
 
 .process {
-  min-height: 100vh;
   background-color: #628FC9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1069,6 +1101,7 @@ li {
 
 @media screen and (min-width: 68.75em) {
   .process {
+    min-height: 100vh;
     background-image: url(../img/about__process.jpg);
     background-size: cover;
     position: relative;
@@ -1146,7 +1179,7 @@ li {
 
 .process__text-box {
   line-height: 1.5;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 @media screen and (min-width: 56.25em) {
@@ -1159,6 +1192,134 @@ li {
 @media screen and (min-width: 68.75em) {
   .process__text-box {
     padding-top: 1.5rem;
+  }
+}
+
+.leadership {
+  background-color: #1F305A;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width: 56.25em) {
+  .leadership {
+    min-height: 50rem;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(98, 143, 201, 0.8)), to(rgba(31, 48, 90, 0.8))), url(../img/about__leadership.jpg);
+    background-image: linear-gradient(to right bottom, rgba(98, 143, 201, 0.8), rgba(31, 48, 90, 0.8)), url(../img/about__leadership.jpg);
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .leadership {
+    min-height: 80rem;
+  }
+}
+
+.leadership__heading {
+  color: #fff;
+  background-color: #1F305A;
+  background-size: fill;
+  z-index: 1;
+  font-size: 2.5rem;
+  padding: 2rem 0 0rem 3rem;
+  text-shadow: #A7A7A7 1px 0 10px;
+}
+
+@media screen and (min-width: 56.25em) {
+  .leadership__heading {
+    font-size: 12rem;
+    background-color: transparent;
+    background-size: fill;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .leadership__heading {
+    position: absolute;
+    z-index: 1;
+    font-size: 15rem;
+    top: -15rem;
+    right: -11.3rem;
+    text-shadow: none;
+    padding: 4rem 0 0rem 6rem;
+  }
+}
+
+.leadership-title:after {
+  position: absolute;
+  content: none;
+  height: 2px;
+  background-color: #628FC9;
+  width: 7rem;
+  height: 8px;
+  padding-left: 3rem;
+  top: 50%;
+}
+
+.leadership__box-1-of-1 {
+  max-width: 70rem;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 56.25em) {
+  .leadership__box-1-of-1 {
+    position: absolute;
+    background-color: transparent;
+    top: 7rem;
+    left: 10rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .leadership__box-1-of-1 {
+    position: absolute;
+    background-color: transparent;
+    top: 10rem;
+    left: 10rem;
+    font-size: 1.8rem;
+    padding: 3rem 5rem 4rem 4rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .leadership__box-1-of-1 {
+    position: absolute;
+    background-color: #fff;
+    top: 25rem;
+    left: 26rem;
+    font-size: 1.8rem;
+    padding: 3rem 5rem 4rem 4rem;
+  }
+}
+
+.leadership__text-box {
+  color: #fff;
+  line-height: 1.8;
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+@media screen and (min-width: 56.25em) {
+  .leadership__text-box {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .leadership__text-box {
+    margin-top: 2rem;
+    color: black;
   }
 }
 /*# sourceMappingURL=main.css.map */
