@@ -71,13 +71,13 @@
     &__img {
         position: relative;
         margin: auto;
-        padding:2.5rem 2rem 2rem 2rem;
+        padding: 2.5rem 2rem 2rem 2rem;
         max-width: 1100px;
         margin-bottom: 100px;
 
-            @media screen and (min-width: $bp-largest) {
-                padding: 3rem 0 0 0;
-            }
+        @media screen and (min-width: $bp-largest) {
+            padding: 3rem 0 0 0;
+        }
 
         .square-1 {
             background-color: $color-primary;
@@ -92,7 +92,6 @@
                 height: 100px;
                 // padding: 6rem 2rem 0 4rem;
                 padding: 8px
-
             }
 
 
@@ -110,7 +109,7 @@
                 width: 400px;
                 height: 600px;
                 padding: 6rem 2rem 0 4rem;
-                
+
             }
         }
 
@@ -136,7 +135,7 @@
                 width: 75%;
                 bottom: -100px;
                 right: 100px;
-                
+
 
             }
 
@@ -154,12 +153,12 @@
             width: 100%;
             box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
         }
-        
+
 
 
 
         //------------------------------------- LINE FEATURE ----------------------------------------//
-        &-line{
+        &-line {
             display: none;
             position: absolute;
             top: 60%;
@@ -172,18 +171,19 @@
             @media screen and (min-width: $bp-medium) {
                 display: inline;
             }
+
             @media screen and (min-width: $bp-large) {
                 margin-left: 0;
             }
-        
-            &:before{
+
+            &:before {
                 content: "";
                 position: absolute;
                 width: 15px;
                 height: 100px;
                 margin-left: 100px;
                 background: $color-primary-light;
-                }
+            }
 
             &:after {
                 content: "";
@@ -192,17 +192,17 @@
                 height: 100px;
                 margin-left: 50px;
                 background: $color-primary-light;
-                }
+            }
 
-        }   
+        }
     }
 }
 
 ////---------------------------------------PROCESS SECTION----------------------------------------///
 
-.process{
-    
-    background-color: $color-primary-light ;
+.process {
+
+    background-color: $color-primary-light;
     display: flex;
     flex-direction: column;
     margin-top: 12rem;
@@ -217,19 +217,19 @@
     }
 
 
-    &__heading{
+    &__heading {
         color: #fff;
         text-shadow: $color-grey-dark 1px 0 10px;
         z-index: 1;
         font-size: 2.5rem;
         margin: 2rem 0 0rem 3rem;
-    
+
 
         @media screen and (min-width: $bp-medium) {
             font-size: 12rem;
             margin: 4rem 0 0rem 6rem;
         }
-        
+
         @media screen and (min-width: $bp-large) {
             font-size: 15rem;
             margin: 12rem 0 0rem 12rem;
@@ -237,7 +237,7 @@
 
     }
 
-    &__box-1-of-2{
+    &__box-1-of-2 {
         max-width: 70rem;
         font-size: 13px;
         margin: 1rem 2rem 1rem 3rem;
@@ -253,7 +253,7 @@
         }
     }
 
-    &__box-2-of-2{
+    &__box-2-of-2 {
         max-width: 70rem;
         font-size: 13px;
         margin: 0rem 2rem 1rem 3rem;
@@ -269,13 +269,13 @@
         }
     }
 
-    &__box-title{
+    &__box-title {
         text-transform: initial;
         font-weight: 500;
         line-height: 1.1;
     }
 
-    &__text-box{
+    &__text-box {
         line-height: 1.5;
         margin: 1rem 1rem 1rem 0;
 
@@ -283,7 +283,7 @@
             padding-top: 1rem;
             margin: 0;
         }
-        
+
         @media screen and (min-width: $bp-large) {
             padding-top: 1.5rem;
         }
@@ -293,30 +293,29 @@
 ////---------------------------------------LEADERSHIP----------------------------------------///
 
 
-.leadership{
-    background-color: $color-primary ;
+.leadership {
+    background-color: $color-primary;
     z-index: 1;
     display: flex;
     flex-direction: column;
     position: relative;
 
-    @media screen and (min-width: $bp-medium){
+    @media screen and (min-width: $bp-medium) {
         min-height: 50rem;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary, 0.8)),
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary, 0.8)),
             url(../img/about__leadership.jpg);
-            background-size: cover;
-            position: relative;
+        background-size: cover;
+        position: relative;
     }
 
-        @media screen and (min-width: $bp-large) {
-            min-height: 80rem;
-            
-        }
+    @media screen and (min-width: $bp-large) {
+        min-height:85rem;
 
-    &__heading{
+    }
+
+    &__heading {
         color: #fff;
         background-color: $color-primary;
         background-size: fill;
@@ -329,23 +328,22 @@
         @media screen and (min-width: $bp-medium) {
             font-size: 12rem;
             background-color: transparent;
-            background-size: fill;
             padding: 0;
         }
+
         @media screen and (min-width: $bp-largest) {
             position: absolute;
             z-index: 1;
             font-size: 15rem;
-            top: -15rem;
-            right: -11.3rem ;
+            top: -11rem;
+            right: -11.3rem;
             text-shadow: none;
-            padding: 4rem 0 0rem 6rem;
         }
     }
 
-    &-title{
-        
-        &:after{
+    &-title {
+
+        &:after {
             position: absolute;
             content: none;
             height: 2px;
@@ -353,7 +351,6 @@
             width: 7rem;
             height: 8px;
             padding-left: 3rem;
-            top: 50%;
         }
     }
 
@@ -370,31 +367,29 @@
         }
 
         @media screen and (min-width: $bp-large) {
-            position: absolute;
-            background-color: transparent;
             top: 10rem;
             left: 10rem;
             font-size: 1.8rem;
-            padding:3rem 5rem 4rem 4rem; 
+            padding: 3rem 5rem 4rem 4rem;
         }
-        
+
 
         @media screen and (min-width: $bp-largest) {
-            position: absolute;
             background-color: #fff;
             top: 25rem;
             left: 26rem;
             font-size: 1.8rem;
-            padding:3rem 5rem 4rem 4rem; 
+            padding: 3rem 5rem 4rem 4rem;
         }
     }
-    &__text-box{
+
+    &__text-box {
         color: #fff;
         line-height: 1.8;
-        margin: 1rem 3rem 1rem 3rem;
-        
+        margin: 1rem 3rem 2rem 3rem;
+
         @media screen and (min-width: $bp-medium) {
-            margin-top: 2rem; 
+            margin-top: 2rem;
             padding: 0;
         }
 
@@ -402,5 +397,83 @@
             margin-top: 2rem;
             color: black;
         }
+    }
+}
+
+
+////---------------------------------------CERTIFICATION----------------------------------------///
+
+.certification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2rem;
+
+
+        @media screen and (min-width: $bp-large) {
+            margin: 5rem;
+            flex-direction: row;
+        }
+        @media screen and (min-width: $bp-largest) {
+            margin: 10rem;
+
+        }
+
+    &__textbox {
+        font-size: 2rem;
+        font-size: 1.3rem;
+        padding-left: 2rem;
+
+        @media screen and (min-width: $bp-medium) {
+            font-size: 1.5rem;
+            padding: 0;
+            margin-top: 2.5rem;
+        }
+
+        @media screen and (min-width: $bp-large) {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: $bp-largest) {
+            font-size: 2rem;
+        }
+
+
+
+    }
+
+    &__logo {
+
+        @media screen and (min-width: $bp-largest) {
+            margin: 0  12rem;
+        }
+
+        img {
+            width: 7rem;
+
+            @media screen and (min-width: $bp-small) {
+                width: 8rem;
+            }
+
+
+            @media screen and (min-width: $bp-medium) {
+                padding-right: 2rem;
+                width: 12rem;
+            }
+
+            @media screen and (min-width: $bp-largest) {
+                padding-right: 3rem;
+                width: 14rem;
+            }
+
+            @media screen and (min-width: $bp-largest) {
+                padding-right: 3.8rem;
+                width: 16rem;
+            }
+        }
+
     }
 }
