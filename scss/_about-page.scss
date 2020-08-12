@@ -4,14 +4,14 @@
     flex-wrap: nowrap;
     position: relative;
     max-width: 70vw;
-    margin: 3rem;
+    margin: 2rem auto;
 
     @media screen and (min-width: $bp-medium) {
         margin: 3rem auto;
     }
 
     @media screen and (min-width: $bp-large) {
-        margin: 7rem auto;
+        margin: 8rem auto;
         min-height: 290px;
     }
 
@@ -48,7 +48,7 @@
         margin-top: 15px;
 
         @media screen and (min-width: $bp-small) {
-            margin: 20px auto 60px auto;
+            margin: 20px auto 30px auto;
         }
 
 
@@ -57,8 +57,8 @@
             top: 53px;
             font-size: 20px;
             max-width: 70%;
-            margin-top: 0;
-            margin-bottom: 20px;
+            margin: 0 0 20px 0;
+          
         }
 
         @media screen and (min-width: $bp-largest) {

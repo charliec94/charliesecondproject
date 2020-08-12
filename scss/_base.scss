@@ -12,6 +12,8 @@ $color-grey: #E3E3E3;
 
 $color-grey-dark: #A7A7A7;
 
+$text-color: rgb(78, 78, 78);
+
 $color-white: #fff;
 $color-black: #000;
 
@@ -46,9 +48,9 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     font-family: $font-primary;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;      
-    
+    color: $text-color !important; 
    
 
 }
@@ -89,6 +91,25 @@ body {
 }
 
 
+//====================fonts=====================///
+
+.small-font{
+    font-size: 1.3rem;
+    color: $color-primary;
+    text-transform: inherit;
+    font-weight: 500;
+
+    @media screen  and (min-width: $bp-small) {
+        font-size: 1.8rem ;
+
+        }
+        @media screen  and (min-width: $bp-medium) {
+            font-size: 2.5rem ;
+    
+            }
+    }
+
+
 h3 {
     font-size: 50px;
     line-height: 0.8;
@@ -114,12 +135,28 @@ h4 {
    @media screen  and (min-width: $bp-medium) {
     font-size: 3rem;
 
-}
+    }
     @media screen  and (min-width: $bp-large) {
         font-size: 5rem;
 
    }
+
 }
+.h4 {
+    &__blue{
+        color: $color-primary-light;
+        font-weight: 400;
+
+        @media screen  and (min-width: $bp-medium) {
+            font-size: 3rem;
+        }
+        @media screen  and (min-width: $bp-large) {
+            font-size: 4rem;
+        }
+    }
+}
+
+
 
 
 .heading-secondary {
@@ -253,3 +290,23 @@ h4 {
     }
 
 }
+
+//=================line break======================//
+
+.line-break {
+    margin: 3px auto 30px auto;
+    max-width: 70%;
+    border-color: $color-grey;
+
+    &:nth-last-of-type(2){
+        margin: 0 auto ;
+    }
+
+    @media screen  and (min-width: $bp-medium) {
+        margin: 3px auto 60px auto;
+
+    }
+    
+
+}
+
